@@ -1,7 +1,9 @@
 VIGNE Lena
 MARCOULY Hugo
 MALACHER Maxence
-
+(mettre à chq fois le dossier sur le bureau)
+commandeShell : php -S localhost:8081 -t C:\Users\mamalacher\Desktop\tp_noté\public
+http://localhost:8081/Streamer.php
 Fonctionnalité réalisés :
 
 Bonus tenté : 
