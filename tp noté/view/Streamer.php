@@ -3,6 +3,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="stylesheet" href="./Css.css">
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <title><?php echo $streamer[0][0]; ?></title>
         <meta name="description" content="liste de streamers">
