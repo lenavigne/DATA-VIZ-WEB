@@ -4,8 +4,7 @@
 $stream = $dbh->prepare('SELECT streamers.name, date, followers_total, views_total
 FROM `streamers-stats`
 INNER JOIN streamers ON `streamers-stats`.`streamer` = streamers.id
-GROUP BY streamer
-ORDER BY date;');
+GROUP BY streamer;');
 $stream->execute();
 $test = $stream->fetchAll();
 
