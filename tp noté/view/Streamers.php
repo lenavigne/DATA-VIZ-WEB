@@ -2,6 +2,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="stylesheet" href="./Css.css">
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <title>All Streamer</title>
         <meta name="description" content="liste de streamers">
@@ -17,7 +18,6 @@
         <p>Nb followers total : <?php echo $streamer[2] ?></p>
         <p>Nb views total : <?php echo $streamer[3] ?></p>
 
-        <!--<p><?php var_dump($streamer); ?></p> -->
         <?php endforeach; ?>
 
     </body>
