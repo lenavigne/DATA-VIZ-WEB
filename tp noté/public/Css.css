@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(170, 164, 164);
+}
+
+h1{
+    background-color: purple;
+    width: 12.5%;
+    font-size: 200%;
+}
+
+h2{
+    background-color: purple;
+    width: 17.5%;
+    font-size: 175%;
+}
+
+.trait{
+    background-color: black;
+}
