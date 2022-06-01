@@ -11,9 +11,47 @@
     </head>
 
     <body>
-        <td><a href="/Streamers.php"><?= 'Retour'; ?></a></td>
-        <h1><?php echo $streamer[0][0]; ?></h1>
+    <div>
+  <canvas id="myChart"></canvas>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+   <script>
+   const labels = [
+    'Janvier',
+    'Fevrier',
+    'Mars',
+    'Avril',
+    'Mai',
+    'Juin',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Evolution',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+        
+        <h1><?php echo $streamer[0][0]; ?></h1>
+        
         <?php foreach ($streamer as $streamerId => $stream) : ?>
             <p>Date du stream: <?php echo $stream[1]; ?></p>
             <p>temps du stream (min): <?php echo $stream[2]; ?></p>
@@ -25,7 +63,11 @@
             <p>nb de views: <?php echo $stream[8]; ?></p>
             <p>nb total de folowers: <?php echo $stream[9]; ?></p>
             <p>nb total de views: <?php echo $stream[10]; ?></p>
+        
         <?php endforeach; ?>
         
     </body>
+
+  
+
 </html>
