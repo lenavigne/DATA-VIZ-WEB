@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(170, 164, 164);
+}
+
+h1{
+    background-color: purple;
+    width: 12.5%;
+    font-size: 225%;
+    box-shadow: 150%;
+    font-style:italic;
+    color: rgb(3, 156, 173);
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 150%;
+    color: purple;
+}
+
+p{
+    font-size: 125%;
+}
