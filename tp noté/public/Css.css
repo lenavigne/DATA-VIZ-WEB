@@ -6,14 +6,17 @@ h1{
     background-color: purple;
     width: 12.5%;
     font-size: 200%;
+    box-shadow: 150%;
+    font-style:italic;
+    color: rgb(3, 156, 173);
 }
 
 h2{
-    background-color: purple;
-    width: 17.5%;
-    font-size: 175%;
+    text-decoration: underline;
+    font-size: 150%;
+    color: purple;
 }
 
-.trait{
-    background-color: black;
+p{
+    font-size: 125%;
 }
