@@ -11,13 +11,15 @@
 
     <body>
         <h1>All streamers</h1>
+        <br><br>
         <?php foreach ($test as $testId=>$streamer): ?>
             <button id="togg1">Cliquez-moi !</button>
         <div id="d1">
-            <p>Streamer : <a href="/streamer.php?id=<?=$testId+1; ?>"><?php  echo $streamer[0]; ?></a></p>
-        <p>Date du dernier stream : <?php  echo $streamer[1]; ?></p>
-        <p>Nb followers total : <?php echo $streamer[2] ?></p>
-        <p>Nb views total : <?php echo $streamer[3] ?></p>
+            <h2>Streamer :</h2> <p><a href="/streamer.php?id=<?=$testId+1; ?>"><?php  echo $streamer[0]; ?></a></p>
+        <h2>Date du dernier stream :</h2> <p><?php  echo $streamer[1]; ?></p>
+        <h2>Nb followers total :</h2> <p><?php echo $streamer[2] ?></p>
+        <h2>Nb views total :</h2> <p><?php echo $streamer[3] ?></p>
+        <br><br>
         </div>
         <?php endforeach; ?>
 
