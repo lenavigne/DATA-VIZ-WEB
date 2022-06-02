@@ -17,12 +17,10 @@
         <?php foreach ($test as $testId=>$streamer): ?>
             </header>
             <br>
-            <button id="togg1">Cliquez-moi !</button>
+            <input type="checkbox" id="scales" name="scales" onclick = "show_hide_div(this, 'd1')"checked>
         <div id="d1">
             <h2>Streamer :</h2> <p><a href="/streamer.php?id=<?=$testId+1; ?>"><?php  echo $streamer[0]; ?></a></p>
-        <h2>Date du dernier stream :</h2> <p><?php  echo $streamer[1]; ?></p>
-        <h2>Nb followers total :</h2> <p><?php echo $streamer[2] ?></p>
-        <h2>Nb views total :</h2> <p><?php echo $streamer[3] ?></p>
+            <img src="../public/images_streamers/<?php $streamer[0]?>.jpg" alt=<?php echo $streamer[0] ?>
         <br><br>
         </div>
         <?php endforeach; ?>
@@ -30,24 +28,15 @@
     </body>
 
     <script type="text/javascript">
-    let togg1 = document.getElementById("togg1");
-        let d1 = document.getElementById("d1");
-        togg1.addEventListener("click", () => {
-  if(getComputedStyle(d1).display != "none"){
-    d1.style.display = "none";
-  } else {
-    d1.style.display = "block";
-  }
-})
-// function show_hide_div(input_box, div_stats) 
-// {
-//     if(input_box.checked)
-//     {
-//         document.getElementId(div_stats).style.display ="flex";
-//     }else
-//     {
-//         document.getElementId(div_stats).style.display ="none";
-//     }
-// }
+function show_hide_div(input_box, div_stats) 
+{
+    if(input_box.checked)
+    {
+        document.getElementById(div_stats).style.display ="flex";
+    }else
+    {
+        document.getElementById(div_stats).style.display ="none";
+    }
+}
     </script>
 </html>
