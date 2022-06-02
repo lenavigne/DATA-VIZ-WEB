@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(170, 164, 164);
+    background-color: rgb(255, 255, 255);
 }
 
 h1{
@@ -12,18 +12,24 @@ h1{
 
 h2{
     text-decoration: underline;
+    text-align: center;
     font-size: 150%;
-    font-family: cursive;
     color: purple;
 }
 
 p{
     font-size: 125%;
+    text-align:center;
     font-family: sans-serif;
+    color:purple;
 }
 
 header{
     background-color: purple;
     width:100%;
     height:500%;
+}
+
+div{
+    text-align:center;
 }
