@@ -9,10 +9,14 @@
         <link rel="icon" type="image/png" sizes="32x32" href="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" >
     </head>
 
+    <header>
     <body>
-        <h1>All streamers</h1>
-        <br><br>
+        <br>
+        <h1>Twitch Tracker</h1>
+        <br>
         <?php foreach ($test as $testId=>$streamer): ?>
+            </header>
+            <br>
             <button id="togg1">Cliquez-moi !</button>
         <div id="d1">
             <h2>Streamer :</h2> <p><a href="/streamer.php?id=<?=$testId+1; ?>"><?php  echo $streamer[0]; ?></a></p>
