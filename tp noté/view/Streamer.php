@@ -30,8 +30,8 @@
     labels: labels,
     datasets: [{
       label: 'Evolution',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: '#105FEA',
+      borderColor: '#EA3610',
       data : [
       <?php if(array_key_exists('0',$stream)) {echo $stream[0]['avg_viewers']; } else { echo null;} ?>,
       <?php if(array_key_exists('1',$stream)) {echo $stream[1]['avg_viewers']; } else { echo null;} ?>,
@@ -62,6 +62,9 @@
         </header>
         <?php foreach ($stream as $streamerId => $stream) : ?>
           <br>
+          <div>
+          <img src="images_streamers/<?php echo $id?>.jpg" ?>
+        </div>
             <h2>Date du stream:</h2> <p><?php echo $stream[1]; ?></p> <h2>temps du stream (min):</h2> <p><?php echo $stream[2]; ?></p>
             <h2>rang:</h2> <p><?php echo $stream[3] ?></p>
             <h2>nb moyen de viewers:</h2>  <p><?php echo $stream[4]; ?></p>
@@ -71,6 +74,7 @@
             <h2>nb de views:</h2> <p><?php echo $stream[8]; ?></p>
             <h2>nb total de folowers:</h2> <p><?php echo $stream[9]; ?></p>
             <h2>nb total de views:</h2> <p><?php echo $stream[10]; ?></p>
+            <br><br>
         
         <?php endforeach; ?>
 
