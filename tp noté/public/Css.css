@@ -3,20 +3,26 @@ body{
 }
 
 h1{
-    background-color: purple;
-    width: 12.5%;
-    font-size: 200%;
-    box-shadow: 150%;
+    font-size: 400%;
     font-style:italic;
+    text-align: center;
     color: rgb(3, 156, 173);
 }
 
 h2{
     text-decoration: underline;
+    font-family: cursive;
     font-size: 150%;
     color: purple;
 }
 
 p{
     font-size: 125%;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: purple;
+    width:100%;
+    height:500%;
 }
