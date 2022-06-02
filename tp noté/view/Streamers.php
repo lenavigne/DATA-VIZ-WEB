@@ -17,11 +17,13 @@
         <?php foreach ($test as $testId=>$streamer): ?>
             </header>
             <br>
+            <div>
             <input type="checkbox" id="scales" name="scales" onclick = "show_hide_div(this, 'd1')"checked>
         <div id="d1">
             <h2>Streamer :</h2> <p><a href="/streamer.php?id=<?=$testId+1; ?>"><?php  echo $streamer[0]; ?></a></p>
-            <img src="../public/images_streamers/<?php $streamer[0]?>.jpg" alt=<?php echo $streamer[0] ?>
-        <br><br>
+            <img src="images_streamers/<?php echo $testId+1?>.jpg" ?>
+        </div>
+            <br><br>
         </div>
         <?php endforeach; ?>
 
